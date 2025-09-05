@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QyA - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+            <a href="index.html">
+                <img src="logo.svg" alt="QyA Logo" height="60">
+            </a>
+        </div>
+            <div class="contact-info">
+                <span>TLF: 602573825</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="particulares.html">Particulares</a></li>
+                <li><a href="empresas.html">Empresas</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Contacta con nosotros</h1>
+                <p>Estamos aquí para ayudarte. Cuéntanos en qué podemos asistirte y te responderemos lo antes posible.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-content">
+                    <div class="form-text">
+                        <h3>¿Quieres más información?</h3>
+                        <p>¿Estas interesado en algunos de nuestros servicios?</p>
+                        <p>¿Nos quieres saludar?</p>
+                        <p>No olvides decirnos en que te podemos ayudar.</p>
+                        
+                        <div class="contact-methods">
+                            <h4>Otras formas de contacto:</h4>
+                            <div class="contact-method">
+                                <strong>Teléfono:</strong>
+                                <p>602573825</p>
+                            </div>
+                            <div class="contact-method">
+                                <strong>WhatsApp:</strong>
+                                <p>602573825</p>
+                            </div>
+                            <div class="contact-method">
+                                <strong>Email:</strong>
+                                <p>qyasesoria@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre*:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos:*</label>
+                            <input type="text" id="apellidos" name="apellidos" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico*:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">TLF*:</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Cuéntanos el problema:</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Cuadro de texto..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alternative Contact Form -->
+        <section class="alternative-form-section">
+            <div class="container">
+                <h2>Formulario Alternativo</h2>
+                <form class="alternative-form" id="alternativeForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre2">Nombre*:</label>
+                            <input type="text" id="nombre2" name="nombre2" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellidos2">Apellidos:*</label>
+                            <input type="text" id="apellidos2" name="apellidos2" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email2">Correo electrónico*:</label>
+                            <input type="email" id="email2" name="email2" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono2">TLF*:</label>
+                            <input type="tel" id="telefono2" name="telefono2" required>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="problema">Cuéntanos el problema:</label>
+                        <textarea id="problema" name="problema" rows="8" placeholder="Cuadro de texto..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>¿Cuánto tiempo tardan en responder?</h3>
+                        <p>Nos comprometemos a responder todas las consultas en un plazo máximo de 24 horas laborables.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Ofrecen consultas gratuitas?</h3>
+                        <p>Sí, ofrecemos una primera consulta gratuita para evaluar tus necesidades y explicarte cómo podemos ayudarte.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Trabajan con empresas de todos los tamaños?</h3>
+                        <p>Absolutamente. Adaptamos nuestros servicios tanto a grandes empresas como a autónomos y pequeños negocios.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Qué información necesitan para empezar?</h3>
+                        <p>Dependiendo del servicio, pero generalmente necesitamos conocer tu situación actual y tus objetivos específicos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contacto</h3>
+                <p>TLF: 602573825</p>
+                <p>Whatsapp: 602573825</p>
+                <p>E-mail: qyasesoria@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
