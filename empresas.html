@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QyA - Servicios a Empresas</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
-            <a href="index.html">
-                <img src="logo.svg" alt="QyA Logo" height="60">
-            </a>
-        </div>
-            <div class="contact-info">
-                <span>Teléfono: 602573825</span>
+                <img src="logo.svg" alt="QyA Asesoría Logo" height="50">
+            </div>
+            <div class="header-contact">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>602 573 825</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>qyasesoria@gmail.com</span>
+                </div>
             </div>
         </div>
     </header>
@@ -25,11 +32,15 @@
     <nav class="navigation">
         <div class="container">
             <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="particulares.html">Particulares</a></li>
                 <li><a href="empresas.html" class="active">Empresas</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
@@ -37,54 +48,124 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-image">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Servicios para empresas">
-                    </div>
-                    <div class="hero-text">
-                        <h2>Servicios a empresas y autónomos.</h2>
-                        <ul class="services-list">
-                            <li>- Consultoría</li>
-                            <li>- Ventas.</li>
-                            <li>- Marketing.</li>
-                            <li>- Estrategia.</li>
-                            <li>- Seguros:</li>
-                            <li class="indent">- Industriales.</li>
-                            <li class="indent">- Para autónomos.</li>
-                            <li class="indent">- Responsabilidad civil.</li>
-                            <li>- Cálculo de rentabilidad de inversiones.</li>
-                            <li>- Planificación y análisis financiero.</li>
-                        </ul>
+            <div class="hero-background">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Soluciones integrales para empresas y autónomos</h1>
+                        <p class="hero-subtitle">Impulsa tu negocio con nuestros servicios de consultoría, seguros especializados y estrategias de crecimiento diseñadas para maximizar tu rentabilidad.</p>
+                        <div class="hero-buttons">
+                            <a href="#servicios" class="btn-primary">Ver Servicios</a>
+                            <a href="contacto.html" class="btn-secondary">Contactar</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Business Solutions Section -->
-        <section class="business-solutions">
+        <!-- Services Overview Section -->
+        <section class="experience-section">
             <div class="container">
-                <h2>Soluciones Empresariales Integrales</h2>
-                
-                <div class="solutions-grid">
-                    <div class="solution-item">
+                <div class="section-header">
+                    <h2>Servicios a empresas y autónomos</h2>
+                    <div class="services-grid">
+                        <div class="service-highlight">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Consultoría</h3>
+                        </div>
+                        <div class="service-highlight">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Ventas</h3>
+                        </div>
+                        <div class="service-highlight">
+                            <i class="fas fa-bullhorn"></i>
+                            <h3>Marketing</h3>
+                        </div>
+                        <div class="service-highlight">
+                            <i class="fas fa-chess"></i>
+                            <h3>Estrategia</h3>
+                        </div>
+                        <div class="service-highlight">
+                            <i class="fas fa-industry"></i>
+                            <h3>Seguros Industriales</h3>
+                        </div>
+                        <div class="service-highlight">
+                            <i class="fas fa-calculator"></i>
+                            <h3>Análisis Financiero</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nuestros Servicios</h2>
+                    <p>Cubrimos todas tus necesidades de asesoría y protección en un solo lugar</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 3V21H21V3H3ZM19 19H5V5H19V19ZM7 7H17V9H7V7ZM7 11H17V13H7V11ZM7 15H13V17H7V15Z" fill="#fff"/>
+                            </svg>
+                        </div>
                         <h3>Consultoría Empresarial</h3>
-                        <p>Optimizamos tus procesos y estrategias empresariales. Analizamos tu negocio desde todos los ángulos para identificar oportunidades de mejora y crecimiento sostenible.</p>
+                        <p>Asesoramiento estratégico para el crecimiento y optimización de tu negocio.</p>
                     </div>
                     
-                    <div class="solution-item">
-                        <h3>Estrategias de Ventas</h3>
-                        <p>Desarrollamos estrategias de ventas efectivas adaptadas a tu mercado. Te ayudamos a aumentar tus ingresos con técnicas probadas y enfoques innovadores.</p>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="#fff"/>
+                                <path d="M19 15L20.09 18.26L23 19L20.09 19.74L19 23L17.91 19.74L15 19L17.91 18.26L19 15Z" fill="#fff"/>
+                                <path d="M5 15L6.09 18.26L9 19L6.09 19.74L5 23L3.91 19.74L1 19L3.91 18.26L5 15Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <h3>Marketing y Ventas</h3>
+                        <p>Estrategias de marketing y técnicas de ventas para impulsar tu empresa.</p>
                     </div>
                     
-                    <div class="solution-item">
-                        <h3>Marketing Digital</h3>
-                        <p>Posicionamos tu marca en el mercado digital. Creamos campañas efectivas que conectan con tu audiencia objetivo y generan resultados medibles.</p>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 7C13.1 7 14 7.9 14 9S13.1 11 12 11 10 10.1 10 9 10.9 7 12 7ZM18 15H6V13.5C6 11.83 9.33 11 12 11S18 11.83 18 13.5V15Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <h3>Seguros Industriales</h3>
+                        <p>Protección integral para empresas industriales y sus activos.</p>
                     </div>
                     
-                    <div class="solution-item">
-                        <h3>Planificación Estratégica</h3>
-                        <p>Diseñamos planes estratégicos a largo plazo para tu empresa. Te acompañamos en la definición de objetivos y en la implementación de las acciones necesarias para alcanzarlos.</p>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 5.5V7.5L21 9ZM3 7V9L9 7.5V5.5L3 7ZM10.5 7.5C10.5 8.3 11.2 9 12 9S13.5 8.3 13.5 7.5V22H10.5V7.5Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <h3>Seguros para Autónomos</h3>
+                        <p>Cobertura especializada para profesionales independientes.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" fill="#fff"/>
+                                <path d="M8 12H16V14H8V12ZM8 16H13V18H8V16Z" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <h3>Análisis Financiero</h3>
+                        <p>Cálculo de rentabilidad y planificación financiera estratégica.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2ZM2 17L12 22L22 17M2 12L12 17L22 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3>Responsabilidad Civil</h3>
+                        <p>Protección ante reclamaciones y responsabilidades legales.</p>
                     </div>
                 </div>
             </div>
@@ -174,9 +255,32 @@
                 <p>Teléfono: 602573825</p>
                 <p>Whatsapp: 602573825</p>
                 <p>E-mail: qyasesoria@gmail.com</p>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+
+
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <h3>🍪 Uso de Cookies</h3>
+            <p class="cookie-text">Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestro uso de cookies.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn-accept">Aceptar</button>
+                <button id="rejectCookies" class="btn-reject">Rechazar</button>
+            </div>
+            <div class="cookie-policy">
+                <a href="politica-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

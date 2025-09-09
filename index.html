@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QyA - Servicios a empresas y autónomos</title>
+    <title>QyA Asesoría - Tu aliado en asesoría empresarial y seguros</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
-            <img src="logo.svg" alt="QyA Logo" height="60">
-        </div>
-            <div class="contact-info">
-                <span>Teléfono: 602573825</span>
+                <img src="logo.svg" alt="QyA Asesoría Logo" height="50">
+            </div>
+            <div class="header-contact">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>602 573 825</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>qyasesoria@gmail.com</span>
+                </div>
             </div>
         </div>
     </header>
@@ -23,11 +32,15 @@
     <nav class="navigation">
         <div class="container">
             <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
                 <li><a href="particulares.html">Particulares</a></li>
                 <li><a href="empresas.html">Empresas</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
@@ -35,36 +48,110 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-image">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Trabajo en equipo">
-                    </div>
-                    <div class="hero-text">
-                        <h2>Servicios a empresas y autónomos.</h2>
-                        <ul class="services-list">
-                            <li>- Consultoría</li>
-                            <li>- Ventas.</li>
-                            <li>- Marketing.</li>
-                            <li>- Estrategia.</li>
-                            <li>- Seguros:</li>
-                            <li class="indent">- Industriales.</li>
-                            <li class="indent">- Para autónomos.</li>
-                            <li class="indent">- Responsabilidad civil.</li>
-                            <li>- Cálculo de rentabilidad de inversiones.</li>
-                            <li>- Planificación y análisis financiero.</li>
-                        </ul>
+            <div class="hero-background">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Trabajamos duro para que dediques tu tiempo a lo mas importante</h1>
+                        <p class="hero-subtitle">Ofrecemos una amplia gama de servicios adaptados a tus necesidades, garantizando el respaldo y la experiencia que mereces.</p>
+                        <div class="hero-buttons">
+                            <a href="#servicios" class="btn-primary">Nuestros Servicios</a>
+                            <a href="#contacto" class="btn-secondary">Contactar</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Problem Section -->
-        <section class="problem-section">
+        <!-- Experiencia Section -->
+        <section class="experience-section">
             <div class="container">
-                <h2>¿Tienes problemas con tus seguros?</h2>
-                <p>No lo enfrentes solo, déjanos ayudarte.</p>
-                <a href="#contact" class="cta-button">Contáctanos</a>
+                <div class="section-header">
+                    <h2>Experiencia y Confianza en Asesoría</h2>
+                    <p>Somos un equipo dedicado a brindarte las mejores soluciones en asesoría empresarial y seguros. Con años de experiencia en el sector, nuestra misión es ofrecerte tranquilidad y protección a través de un servicio personalizado y de alta calidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Valores Section -->
+        <section class="values-section">
+            <div class="container">
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Compromiso</h3>
+                        <p>Nos comprometemos a entender tus necesidades y a encontrar las soluciones que mejor se adapten a tu negocio y patrimonio.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Transparencia</h3>
+                        <p>Te ofrecemos información clara y honesta para que tomes decisiones informadas sobre tu protección y crecimiento.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Experiencia</h3>
+                        <p>Más de 10 años en el sector, garantizando confianza y soluciones probadas para tu tranquilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Section -->
+        <section id="servicios" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nuestros Servicios</h2>
+                    <p>Cubrimos todas tus necesidades de asesoría y protección en un solo lugar</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Consultoría Empresarial</h3>
+                        <p>Asesoramiento estratégico para el crecimiento y optimización de tu negocio.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Marketing y Ventas</h3>
+                        <p>Estrategias de marketing y técnicas de ventas para impulsar tu empresa.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Seguros Industriales</h3>
+                        <p>Protección integral para empresas industriales y sus activos.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Seguros para Autónomos</h3>
+                        <p>Cobertura especializada para profesionales independientes.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Análisis Financiero</h3>
+                        <p>Cálculo de rentabilidad y planificación financiera estratégica.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Responsabilidad Civil</h3>
+                        <p>Protección ante reclamaciones y responsabilidades legales.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -76,7 +163,7 @@
                         <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80" alt="Consultoría profesional">
                     </div>
                     <div class="about-text">
-                        <p><strong>En QyAsesoría decimos las cosas claras.</strong></p>
+                        <p><strong>En QyA Asesoría decimos las cosas claras.</strong></p>
                         <p>Tu patrimonio, grande o pequeño, merece estar protegido y bien gestionado. No vendemos humo, ni promesas imposibles.</p>
                         <p>No prometemos atajos, prometemos acompañarte con experiencia, transparencia y la verdad por delante.</p>
                         <p>Lo que hacemos es sencillo: analizar tu situación, entender tus objetivos y poner nuestra experiencia a trabajar para que crezcas con seguridad.</p>
@@ -87,16 +174,49 @@
             </div>
         </section>
 
-        <!-- Contact Form Section -->
-        <section id="contact" class="contact-form-section">
+        <!-- Trust Section -->
+        <section class="trust-section">
             <div class="container">
-                <div class="form-content">
-                    <div class="form-text">
-                        <h3>¿Quieres más información?</h3>
-                        <p>¿Estas interesado en algunos de nuestros servicios?</p>
-                        <p>¿Nos quieres saludar?</p>
-                        <p>No olvides decirnos en que te podemos ayudar.</p>
+                <div class="section-header">
+                    <h2>Tu Confianza, Nuestra Mayor Recompensa</h2>
+                </div>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Asesoramiento Personalizado</h3>
+                        <p>Entendemos tus necesidades y te ofrecemos soluciones a medida.</p>
                     </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>Experiencia y Solidez</h3>
+                        <p>Más de 10 años en el sector asegurador, garantizando confianza.</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-th-large"></i>
+                        </div>
+                        <h3>Amplia Gama de Productos</h3>
+                        <p>Cubrimos todas tus necesidades de protección en un solo lugar.</p>
+                    </div>
+                </div>
+                <div class="trust-footer">
+                    <p>Nos diferenciamos por nuestro enfoque centrado en el cliente, la calidad de nuestros productos y un servicio excepcional.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contacto" class="contact-form-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>¿Quieres más información?</h2>
+                    <p>¿Estás interesado en algunos de nuestros servicios? ¿Nos quieres saludar? No olvides decirnos en qué te podemos ayudar.</p>
+                </div>
+                <div class="form-content">
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
                             <label for="nombre">Nombre*:</label>
@@ -164,9 +284,34 @@
                 <p>Teléfono: 602573825</p>
                 <p>Whatsapp: 602573825</p>
                 <p>E-mail: qyasesoria@gmail.com</p>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+
+
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content-init">
+            <h3>🍪 Uso de Cookies</h3>
+        </div>
+        <div class="cookie-content">
+            <p class="cookie-text">Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestro uso de cookies.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn-accept">Aceptar</button>
+                <button id="rejectCookies" class="btn-reject">Rechazar</button>
+            </div>
+            <div class="cookie-policy">
+                <a href="politica-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
